@@ -1,0 +1,56 @@
+.start
+    min-height: 690px
+    padding: 90px 0
+    &__img
+        position: relative
+        margin: 0 auto
+        width: 302px
+        height: 302px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+            .start__border
+                &_1
+                    top: 31px
+                    left: 31px 
+                &_2
+                    top: 31px
+                    right: 31px
+                &_3 
+                    bottom: 31px
+                    left: 31px
+                &_4
+                    bottom: 31px
+                    right: 31px
+    &__border
+        position: absolute
+        width: 35px
+        height: 35px
+        transition: 0.6s all
+        &_1
+            top: 0
+            left: 0
+            border-top: 1px solid $main-color
+            border-left: 1px solid $main-color
+        &_2
+            top: 0
+            right: 0
+            border-top: 1px solid $main-color
+            border-right: 1px solid $main-color
+        &_3 
+            bottom: 0
+            left: 0
+            border-bottom: 1px solid $main-color
+            border-left: 1px solid $main-color
+        &_4
+            bottom: 0
+            right: 0
+            border-bottom: 1px solid $main-color
+            border-right: 1px solid $main-color
+    .title
+        margin-top: 73px
+    .button
+        margin: 30px auto 0
+

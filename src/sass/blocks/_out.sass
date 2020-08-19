@@ -1,0 +1,70 @@
+.out
+    min-height: 896px
+    padding: 79px 0 81px
+    &-card
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &_mt37
+                margin-top: 37px
+        &__item
+            position: relative
+            width: 360px
+            height: 255px
+            border: 1px solid #ececec
+            display: flex
+            justify-content: center
+        &__descr
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 35px
+            width: 265px
+            height: 43px
+            color: #393939
+            font-size: 18px
+            font-weight: 300
+            line-height: 26px
+            text-align: center
+            &_bold
+                font-weight: 700
+        &__logo
+            position: absolute
+            right: 0
+            bottom: 0
+    &-transition
+        margin-top: 50px
+        &__wrapper
+            display: flex
+            &:nth-child(2)
+                margin-top: 22px
+        &__arrow-down
+            position: relative
+            width: 170px
+            height: 72px
+            margin: 0 auto
+            padding-top: 18px
+            .out-transition__arrow
+                display: block
+                width: 100px
+                height: 2px
+                background-color: #ececec
+                box-shadow: 1px 1px 10px #ececec
+                &:nth-child(1)
+                    transform: rotate(30deg) translateX(9%)
+                &:nth-child(2)
+                    transform: rotate(-30deg) translateX(-9%)
+                &_active-animation
+                    animation: arrow_on 10s ease
+                &_active
+                    background-color: $main-color
+                    box-shadow: 3px 3px 10px $main-color
+        &__header
+            display: block
+            margin-top: 33px
+            font-size: 48px
+            font-weight: 700
+            line-height: 30.04px
+            text-align: center
+            text-transform: uppercase

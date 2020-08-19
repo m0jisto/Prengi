@@ -1,0 +1,60 @@
+.options
+    position: relative
+    height: 580px
+    display: flex
+    .title
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 79px
+        color: #ffffff
+        z-index: 1
+    &__first
+        position: relative
+        display: flex
+        justify-content: flex-end
+        width: 50%
+        height: 100%
+        background: url('../img/bg/cloud.jpg') center (center / cover) no-repeat
+        padding: 270px 82px 0 0
+        &-container
+            width: 483px
+    &__second
+        position: relative
+        display: flex
+        justify-content: flex-start
+        width: 50%
+        height: 100%
+        background: url('../img/bg/accommodation.jpg') center (center / cover) no-repeat
+        padding: 270px 0 0 82px
+        &-container
+            width: 479px
+        .options__header
+            text-align: left
+        .options__descr
+            text-align: left
+        .options__overlay
+            left: 43px
+    &__header
+        font-size: 30px
+        font-weight: 700
+        line-height: 0.73
+        text-align: right
+        color: #ffffff
+    &__descr
+        width: 483px
+        margin-top: 20px
+        font-size: 18px
+        font-weight: 300
+        line-height: 1.44
+        text-align: right
+        color: #ffffff
+    &__overlay
+        position: absolute
+        top: 232px
+        right: 43px
+        width: 167px
+        height: 167px
+        opacity: 0.3
+        background-color: $main-color
+

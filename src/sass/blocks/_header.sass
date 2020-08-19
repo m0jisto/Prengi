@@ -1,0 +1,101 @@
+.header
+    min-height: 700px
+    background: url('../img/bg/header.jpg') center (center / cover) no-repeat
+    padding: 39px 0 0
+    &__wrapper
+        margin-top: 27px
+        width: 100%
+    &__item
+        position: absolute
+        top: 0
+        left: -5000px
+        display: flex
+        justify-content: space-between
+        opacity: 0
+        transition: 1.6s all
+        &_active
+            position: static
+            opacity: 1
+        &_management
+            margin-top: 106px
+        &_title
+            display: block
+            color: #ffffff
+            font-size: 42px
+            font-weight: 400
+            line-height: 48px
+        &_subtitle
+            display: block
+            margin-top: 27px
+            color: #ffffff
+            font-size: 24px
+            font-weight: 300
+            line-height: 30px
+    &__dots
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 68px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_wrapper
+            width: 81px
+            margin: 0 13px
+            display: flex
+            justify-content: space-between
+        &_prev
+            margin-top: 8px
+            span
+                display: block
+                width: 12px
+                height: 1px
+                background-color: #fff
+                margin-bottom: 7px
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    transform: rotate(45deg)
+        &_next
+            margin-top: 8px
+            span
+                display: block
+                width: 12px
+                height: 1px
+                background-color: #fff
+                margin-bottom: 7px
+                &:nth-child(1)
+                    transform: rotate(45deg)
+                &:nth-child(2)
+                    transform: rotate(-45deg)
+        &_round
+            width: 11px
+            height: 11px
+            border: 1px solid #ffffff
+            border-radius: 100%
+            transition: 0.5s all
+            &_active
+                background-color: #fff
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__menu
+        margin: 0
+        padding: 0
+        width: 540px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style-type: none
+        &_link
+            display: block
+            color: #ffffff
+            font-size: 13px
+            font-weight: 400
+            text-transform: uppercase 
+            transition: 0.5s all  
+            &:hover
+                color: $main-color
+                text-decoration: none
+                border-bottom: 1px $main-color solid
